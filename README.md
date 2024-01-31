@@ -68,6 +68,35 @@ cp .env.example .env
 sam deploy --guided
 ```
 
+### ローカルテスト
+
+1. ビルド
+
+```bash
+sam build
+```
+
+2. テストイベントの実行
+
+```bash
+# Webフロントエンド関連のツイートをテスト
+sam local invoke HelloWorldFunction -e events/event.json
+
+# 花譜関連のツイートをテスト
+sam local invoke HelloWorldFunction -e events/event2.json
+```
+
+テストイベントの内容：
+
+- `event.json`: Web フロントエンド関連のツイート
+- `event2.json`: 花譜関連のイラストのツイート
+
+テスト実行時の出力には以下の情報が含まれます：
+
+- リクエストの詳細情報
+- 処理時間やメモリ使用量などのメトリクス
+- レスポンス内容
+
 ## 開発状況
 
 ### 完了した機能
