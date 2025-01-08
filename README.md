@@ -16,6 +16,7 @@ IFTTT -> 本プログラム -> slack
 1. cursor をインストール、設定する
    インストール,日本語化 done
    todo:チュートリアルを探す
+   [候補](https://zenn.dev/yasuna/articles/9dadbcdc3be48d)
    設定の[参考](https://www.creationline.com/tech-blog/chatgpt-ai/ai/68729)
 2. lambda への CICD を構築する
 3. ハローワールドの出力
