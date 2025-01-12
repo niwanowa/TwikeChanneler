@@ -14,7 +14,7 @@ IFTTT -> 本プログラム -> slack
 ## 主なマイルストン
 
 1. cursor をインストール、設定する
-   インストール,日本語化 done
+   インストール,日本語化,cursor pro にアップグレード done
    todo:チュートリアルを探す
    [候補](https://zenn.dev/yasuna/articles/9dadbcdc3be48d)
    設定の[参考](https://www.creationline.com/tech-blog/chatgpt-ai/ai/68729)
