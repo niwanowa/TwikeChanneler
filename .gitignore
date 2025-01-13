@@ -163,3 +163,7 @@ cython_debug/
 
 # VSCode
 *.code-workspace
+
+# cursor files
+.cursor/
+.cursor_history/
