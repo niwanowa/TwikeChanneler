@@ -167,3 +167,6 @@ cython_debug/
 # cursor files
 .cursor/
 .cursor_history/
+
+# aws-sam
+.aws-sam/
