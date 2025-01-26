@@ -1,62 +1,38 @@
 {
-  "body": "{\"message\": \"hello world\"}",
+  "body": "<blockquote class=\"twitter-tweet\">\n  <p lang=\"en\" dir=\"ltr\">微えっちな超てんちゃんを再掲\n#NEEDY_pic https://t.co/ItIsVAWSlQ</p>\n  &mdash; 🎀超絶激病み🎀堕天使ちゃん (@x_spidekawaii_x)\n  <a href=\"https://twitter.com/x_spidekawaii_x/status/1882744150002688139\">Jan 24, 2025</a>\n</blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n",
   "resource": "/hello",
-  "path": "/hello",
-  "httpMethod": "GET",
+  "path": "/hello/",
+  "httpMethod": "POST",
   "isBase64Encoded": false,
-  "queryStringParameters": {
-    "foo": "bar"
-  },
-  "pathParameters": {
-    "proxy": "/path/to/resource"
-  },
-  "stageVariables": {
-    "baz": "qux"
-  },
+  "queryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
   "headers": {
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-    "Accept-Encoding": "gzip, deflate, sdch",
-    "Accept-Language": "en-US,en;q=0.8",
-    "Cache-Control": "max-age=0",
-    "CloudFront-Forwarded-Proto": "https",
-    "CloudFront-Is-Desktop-Viewer": "true",
-    "CloudFront-Is-Mobile-Viewer": "false",
-    "CloudFront-Is-SmartTV-Viewer": "false",
-    "CloudFront-Is-Tablet-Viewer": "false",
-    "CloudFront-Viewer-Country": "US",
-    "Host": "1234567890.execute-api.us-east-1.amazonaws.com",
-    "Upgrade-Insecure-Requests": "1",
-    "User-Agent": "Custom User Agent String",
-    "Via": "1.1 08f323deadbeefa7af34d5feb414ce27.cloudfront.net (CloudFront)",
-    "X-Amz-Cf-Id": "cDehVQoZnx43VYQb9j2-nvCh-9z396Uhbp027Y2JvkCPNLmGJHqlaA==",
-    "X-Forwarded-For": "127.0.0.1, 127.0.0.2",
+    "Content-type": "application/json",
+    "User-Agent": "Amazon CloudFront",
+    "Host": "vmqoo31f3j.execute-api.ap-northeast-1.amazonaws.com",
+    "X-Forwarded-For": "18.207.65.189, 15.158.50.238",
     "X-Forwarded-Port": "443",
     "X-Forwarded-Proto": "https"
   },
   "requestContext": {
-    "accountId": "123456789012",
-    "resourceId": "123456",
-    "stage": "prod",
-    "requestId": "c6af9ac6-7b61-11e6-9a41-93e8deadbeef",
-    "requestTime": "09/Apr/2015:12:34:56 +0000",
-    "requestTimeEpoch": 1428582896000,
-    "identity": {
-      "cognitoIdentityPoolId": null,
-      "accountId": null,
-      "cognitoIdentityId": null,
-      "caller": null,
-      "accessKey": null,
-      "sourceIp": "127.0.0.1",
-      "cognitoAuthenticationType": null,
-      "cognitoAuthenticationProvider": null,
-      "userArn": null,
-      "userAgent": "Custom User Agent String",
-      "user": null
-    },
-    "path": "/prod/hello",
+    "resourceId": "shd55o",
     "resourcePath": "/hello",
     "httpMethod": "POST",
-    "apiId": "1234567890",
-    "protocol": "HTTP/1.1"
+    "extendedRequestId": "E-Cn9E-CtjMEL-g=",
+    "requestTime": "26/Jan/2025:00:13:38 +0000",
+    "path": "/Prod/hello/",
+    "accountId": "339851681101",
+    "protocol": "HTTP/1.1",
+    "stage": "Prod",
+    "domainPrefix": "vmqoo31f3j",
+    "requestTimeEpoch": 1737850418538,
+    "requestId": "4751250f-e0bb-4c27-be01-8f5adb12a768",
+    "identity": {
+      "sourceIp": "18.207.65.189",
+      "userAgent": "Amazon CloudFront"
+    },
+    "domainName": "vmqoo31f3j.execute-api.ap-northeast-1.amazonaws.com",
+    "apiId": "vmqoo31f3j"
   }
 }
