@@ -2,6 +2,7 @@ import json
 import logging
 import os
 import sys
+import re
 
 # import requests
 
@@ -41,6 +42,10 @@ def lambda_handler(event, context):
     logger.info("## EVENT")
     logger.info(event)
 
+    # イベントが配列の場合は最初の要素を使用
+    if isinstance(event, list):
+        event = event[0]
+
     # Log request URI
     if "requestContext" in event and "http" in event["requestContext"]:
         request_uri = event["requestContext"]["http"].get("path", "N/A")
@@ -65,6 +70,10 @@ def lambda_handler(event, context):
     else:
         logger.info("Request Body: N/A")
 
+    # ツイート本文をHTMLから抽出
+    tweet_match = re.search(r"<p[^>]*>(.*?)</p>", event["body"], re.DOTALL)
+    tweet_text = tweet_match.group(1).strip() if tweet_match else ""
+
     # try:
     #     ip = requests.get("http://checkip.amazonaws.com/")
     # except requests.RequestException as e:
@@ -77,6 +86,6 @@ def lambda_handler(event, context):
         "statusCode": 200,
         "body": json.dumps({
             "message": "hello world",
-            # "location": ip.text.replace("\n", "")
+            "tweet_text": tweet_text
         }),
     }
